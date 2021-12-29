@@ -13,7 +13,7 @@ const crearArchivo = async (base = 1, listar, hasta = 10) => {
             console.log('====================\n'.rainbow);
             console.log(salida.blue);
         }
-        fs.writeFileSync(`tabla-${base}.txt`, salida);
+        fs.writeFileSync(`./salida/tabla-${base}.txt`, salida);
         //muetra el resultado de la tabla de multiplicar!!
         return `tabla-${base}.txt\nCreada exitosamente!!`.green;
     } catch (error) {
