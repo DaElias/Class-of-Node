@@ -58,7 +58,7 @@ let nombre;
 getEmpleado(id)
 .then(empleado => {
     nombre = empleado;
-    return getSalario(id)
+    return getSalario(id);
 })
 .then(salario => console.log(`El salario de ${nombre} es $ ${salario}`))
 .catch(e => console.log(e));

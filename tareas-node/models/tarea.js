@@ -7,6 +7,9 @@ class Tarea {
     constructor(des) {
         this.id = uuidv4();
         this.des = des;
+        this.compltetada = false;
+        this.compltetadaEn = NaN;
+        
     }
 
 }
